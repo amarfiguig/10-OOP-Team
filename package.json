@@ -1,23 +1,25 @@
 {
-  "name": "09-nodejs-readme-generator",
+  "name": "10-opp-Team",
   "version": "1.0.0",
-  "description": "## Your Task",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amarfiguig/09-nodejs-readme-generator.git"
+    "url": "git+https://github.com/amarfiguig/10-OOP-Team.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amarfiguig/09-nodejs-readme-generator/issues"
+    "url": "https://github.com/amarfiguig/10-OOP-Team/issues"
   },
-  "homepage": "https://github.com/amarfiguig/09-nodejs-readme-generator#readme",
+  "homepage": "https://github.com/amarfiguig/10-OOP-Team#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.4",
+    "jest": "29.3.1"
+
   }
 }
