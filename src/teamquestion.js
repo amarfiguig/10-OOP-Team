@@ -1,38 +1,83 @@
-//main menu questions
-//inquirer takes an array of objects as its input 
-//function to run main question
-const Manager = require('../lib/Manager');
-const Employee = require('../lib/Employee');
-const Intern = require('../lib/Intern');
-const Engineer = require('../lib/Engineer');
-const inquirer = require("inquirer");
-const {buildTeam} = require('./pageBuilder')
+//The questions that will be displayed to the user when the functions are executed.
+const StartQuestion = [
+  {
+    type: "list",
+    message: "Choose an action:",
+    name: "selection",
+    choices: ["Add Manager", "Add Engineer", "Add Intern", "Build Team Page"],
+  },
+];
 
-//created an empty array to push new entry data into 
-const managerArray = [];
-const internArray = [];
-const engineerArray = [];
+const ManagerQues = [
+  {
+    type: "input",
+    name: "name",
+    message: "Employee's name:",
+  },
+  {
+    type: "input",
+    name: "id",
+    message: "Employee's ID number:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Employee's email:",
+  },
+  {
+    type: "input",
+    name: "officeNumber",
+    message: "Manager's office number:",
+  },
+];
 
-function starterQuestions() {
-    inquirer.prompt([
-        {
-            type: 'list',
-            message: 'What action would you like to take?',
-            name: 'action_choice',
-            choices: ['Add an engineer', 'Add an intern', 'Add a manager', 'Build team']
+const EngineerQues = [
+  {
+    type: "input",
+    name: "name",
+    message: "Employee's name:",
+  },
+  {
+    type: "input",
+    name: "id",
+    message: "Employee's ID number:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Employee's email:",
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "Engineer's GitHub username:",
+  },
+];
 
-        },
+const InternQues = [
+  {
+    type: "input",
+    name: "name",
+    message: "Employee's name:",
+  },
+  {
+    type: "input",
+    name: "id",
+    message: "Employee's ID number:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Employee's email:",
+  },
+  {
+    type: "input",
+    name: "school",
+    message: "Intern's school name:",
+  },
+];
 
-    ])
-    //checking each response and running add specific function based on selection from main menu questions
-    .then(function(response) {
-        if(response.action_choice === 'Add an engineer'){
-            addEngineer()
-       }
-
-       else if(response.action_choice === 'Add an intern'){
-            addIntern()
-
+module.exports = { StartQuestion, InternQues, EngineerQues, ManagerQues };
         }
 
         else if(response.action_choice === 'Add a manager'){
