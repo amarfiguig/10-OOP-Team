@@ -4,7 +4,7 @@ const Employee = require("../lib/Employee");
 // Defining a test function for the "Employee" class
 describe("Employee", () => {
     
-// Defining a test function for the start-up of the code
+// Defining a test function for the code
   describe("Initial Test", () => {
     
 // Defining a test case to check if the output of the constructor matches the expected values
