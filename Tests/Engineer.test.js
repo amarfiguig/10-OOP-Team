@@ -8,10 +8,10 @@ describe("Engineer", () => {
     it("Verifying the Accuracy of Employee Information ", () => {
         
 // Example employee data for testing
-        const name = 'X';
-        const id = 1452;
-        const email = 'x@work.com';
-        const github = '@xwork'
+        const name = 'X2';
+        const id = MN6485;
+        const email = 'x2@work.com';
+        const github = '@x2work'
         const role = 'Engineer';
 
       const team = new Engineer(name, id, email, github);
