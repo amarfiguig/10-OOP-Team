@@ -16,18 +16,18 @@ describe("Employee", () => {
       const email = "x@work.com";
       const role = "Employee";
 // Creating a new instance of the "Employee" class with the example values
-      const result = new Employee(name, id, email);
+      const team = new Employee(name, id, email);
 
 // Checking if the values in the "result" instance match the expected values
-      expect(employee.name).toEqual(name);
-      expect(employee.id).toEqual(id);
-      expect(employee.email).toEqual(email);
+      expect(team.name).toEqual(name);
+      expect(team.id).toEqual(id);
+      expect(team.email).toEqual(email);
 
 // Checking if the results of calling the "getName()", "getID()", "getEmail()", and "getRole()" functions match the expected values
-      expect(employee.getName()).toEqual(name);
-      expect(employee.getID()).toEqual(id);
-      expect(employee.getEmail()).toEqual(email);
-      expect(employee.getRole()).toEqual(role);
+      expect(team.getName()).toEqual(name);
+      expect(team.getID()).toEqual(id);
+      expect(team.getEmail()).toEqual(email);
+      expect(team.getRole()).toEqual(role);
     });
   });
 });
