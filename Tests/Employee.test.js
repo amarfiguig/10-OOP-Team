@@ -8,7 +8,7 @@ describe("Employee", () => {
   describe("Initial Test", () => {
     
 // Defining a test case to check if the output of the constructor matches the expected values
-    it("check for correct answers from the construtor", () => {
+    it("Verifying Employee Information", () => {
         
 // Setting example values for the employee's name, id, and email
       const name = "X";
