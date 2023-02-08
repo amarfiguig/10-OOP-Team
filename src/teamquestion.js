@@ -8,7 +8,7 @@ const StartQuestion = [
   },
 ];
 
-const ManagerQues = [
+const ManagerQuestion = [
   {
     type: "input",
     name: "name",
@@ -31,7 +31,7 @@ const ManagerQues = [
   },
 ];
 
-const EngineerQues = [
+const EngineerQuestion = [
   {
     type: "input",
     name: "name",
@@ -54,7 +54,7 @@ const EngineerQues = [
   },
 ];
 
-const InternQues = [
+const InternQuestion = [
   {
     type: "input",
     name: "name",
