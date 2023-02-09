@@ -12,22 +12,22 @@ const ManagerQuestion = [
   {
     type: "input",
     name: "name",
-    message: "Employee's name:",
+    message: "What Employee's name ?",
   },
   {
     type: "input",
     name: "id",
-    message: "Employee's ID number:",
+    message: "What Employee's ID number ?",
   },
   {
     type: "input",
     name: "email",
-    message: "Employee's email:",
+    message: "What Employee's email ?",
   },
   {
     type: "input",
     name: "officeNumber",
-    message: "Manager's office number:",
+    message: "What Manager's office number ?",
   },
 ];
 
@@ -35,22 +35,22 @@ const EngineerQuestion = [
   {
     type: "input",
     name: "name",
-    message: "Employee's name:",
+    message: "WHat Employee's name ?",
   },
   {
     type: "input",
     name: "id",
-    message: "Employee's ID number:",
+    message: "What Employee's ID number ?",
   },
   {
     type: "input",
     name: "email",
-    message: "Employee's email:",
+    message: "What Employee's email ?",
   },
   {
     type: "input",
     name: "github",
-    message: "Engineer's GitHub username:",
+    message: "What Engineer's GitHub username ?",
   },
 ];
 
@@ -58,7 +58,7 @@ const InternQuestion = [
   {
     type: "input",
     name: "name",
-    message: "Employee's name:",
+    message: "What Employee's name ?",
   },
   {
     type: "input",
@@ -68,16 +68,16 @@ const InternQuestion = [
   {
     type: "input",
     name: "email",
-    message: "Employee's email:",
+    message: "What Employee's email ?",
   },
   {
     type: "input",
     name: "school",
-    message: "Intern's school name:",
+    message: "WHat Intern's school name ?",
   },
 ];
 
-module.exports = { StartQuestion, InternQues, EngineerQues, ManagerQues };
+module.exports = { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion };
         }
 
         else if(response.action_choice === 'Add a manager'){
