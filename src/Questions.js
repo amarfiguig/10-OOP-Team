@@ -7,6 +7,8 @@ const engineers = [];
 const interns = [];
 const managers = [];
 const Questions = require("./questions");
+const { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion } = require("./teamquestion");
+
 
 const startMainQuestions = () => {
   inquirer.prompt(Questions.starterQuestions).then((response) => {
