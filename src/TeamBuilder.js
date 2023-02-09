@@ -75,3 +75,4 @@ const htmlGenerator = (managers, engineers, interns) => {
 
 //Exporting the function for use in the questions.js file.
 module.exports = htmlGenerator;
+module.exports = TeamBuilder;
