@@ -11,10 +11,10 @@ describe("Employee", () => {
     it("Verifying Employee Information", () => {
         
 // Setting example values for the employee's name, id, and email
-      const name = "X";
-      const id = U24478;
-      const email = "x@work.com";
-      const role = "Employee";
+      const name = 'X';
+      const id = 'U24478';
+      const email = 'x@work.com';
+      const role = 'Employee';
 // Creating a new instance of the "Employee" class with the example values
       const team = new Employee(name, id, email);
 
@@ -25,7 +25,7 @@ describe("Employee", () => {
 
 // Checking if the results of calling the "getName()", "getID()", "getEmail()", and "getRole()" functions match the expected values
       expect(team.getName()).toEqual(name);
-      expect(team.getID()).toEqual(id);
+      expect(team.getId()).toEqual(id);
       expect(team.getEmail()).toEqual(email);
       expect(team.getRole()).toEqual(role);
     });
