@@ -9,7 +9,7 @@ describe("Engineer", () => {
         
 // Example employee data for testing
         const name = 'X2';
-        const id = MN6485;
+        const id = 'MN6485';
         const email = 'x2@work.com';
         const github = '@x2work'
         const role = 'Engineer';
@@ -24,7 +24,7 @@ describe("Engineer", () => {
         
 // Check if the getter methods return the expected values
       expect(team.getName()).toEqual(name);
-      expect(team.getID()).toEqual(id);
+      expect(team.getId()).toEqual(id);
       expect(team.getEmail()).toEqual(email);
       expect(team.getGithub()).toEqual(github);
       expect(team.getRole()).toEqual(role);
