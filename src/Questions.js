@@ -1,11 +1,8 @@
 const inquirer = require("inquirer");
-const htmlCreator = require("./TeamBuilder.js");
+const TeamBuilderr = require("./TeamBuilder.js");
 const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 const Manager = require("../lib/Manager");
-const engineers = [];
-const interns = [];
-const managers = [];
 const Questions = require("./questions");
 const { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion } = require("./teamquestion");
 
