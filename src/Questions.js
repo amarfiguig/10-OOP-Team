@@ -66,4 +66,4 @@ const addManager = () => {
   });
 };
 
-module.exports = startMainQuestions();
+module.exports = Questions();
