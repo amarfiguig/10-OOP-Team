@@ -16,7 +16,7 @@ describe("Employee", () => {
       const email = 'x@work.com';
       const role = 'Employee';
 // Creating a new instance of the "Employee" class with the example values
-      const team = new Employee(name, id, email);
+      const team = new Employee(id , name, email);
 
 // Checking if the values in the "result" instance match the expected values
       expect(team.name).toEqual(name);
