@@ -3,7 +3,7 @@ const TeamBuilderr = require("./TeamBuilder.js");
 const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 const Manager = require("../lib/Manager");
-const Questions = require("./questions");
+const Questions = require("./Questions");
 const { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion } = require("./teamquestion");
 
 
@@ -30,8 +30,8 @@ const startMainQuestions = () => {
 const addEngineer = () => {
   inquirer.prompt(Questions.EngineerQuestions).then((response) => {
     const engineer = new Engineer(
-      response.name,
       response.id,
+      response.name,
       response.email,
       response.github
     );
@@ -43,8 +43,8 @@ const addEngineer = () => {
 const addIntern = () => {
   inquirer.prompt(Questions.InternQuestions).then((response) => {
     const intern = new Intern(
-      response.name,
       response.id,
+      response.name,
       response.email,
       response.school
     );
@@ -56,8 +56,8 @@ const addIntern = () => {
 const addManager = () => {
   inquirer.prompt(Questions.ManagerQuestions).then((response) => {
     const manager = new Manager(
-      response.name,
       response.id,
+      response.name,
       response.email,
       response.officenumber
     );
