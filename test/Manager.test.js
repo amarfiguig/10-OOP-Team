@@ -1,5 +1,5 @@
 // Requiring the information from the "Manager" class
-const Employee = require('../lib/Manager');
+const Manager = require('../lib/Manager');
 
 // Defining a test function for the "Manager" class
         describe("Manager", () => {
@@ -32,6 +32,7 @@ const Employee = require('../lib/Manager');
         expect(team.getId()).toEqual(id);
         expect(team.getEmail()).toEqual(email);
         expect(team.getOfficeNumber()).toEqual(officeNumber);
+        expect(team.getRole()).toEqual(role);
 
        })
     })
