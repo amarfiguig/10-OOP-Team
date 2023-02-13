@@ -14,7 +14,7 @@ describe("Engineer", () => {
         const github = '@x2work'
         const role = 'Engineer';
 
-      const team = new Engineer(name, id, email, github);
+      const team = new Engineer( id, name, email, github);
         
 // Check if the properties match the provided data
       expect(team.name).toEqual(name);
