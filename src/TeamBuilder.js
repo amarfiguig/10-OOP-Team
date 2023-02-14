@@ -10,7 +10,7 @@ const Intern = require('../lib/Intern');
 
 // This function is executed when the user requests. It retrieves the information from the arrays created in the "teamquestions.js" file and inserts 
 //it into the appropriate template literals.
-const htmlGenerator = (managers, engineers, interns) => {
+const TeamBuilder = (managers, engineers, interns) => {
     let page = fs.readFileSync('./Template/index.html', 'utf8');
 
     if (page) {
@@ -74,5 +74,5 @@ const htmlGenerator = (managers, engineers, interns) => {
 };
 
 //Exporting the function for use in the questions.js file.
-module.exports = htmlGenerator;
+
 module.exports = TeamBuilder;
