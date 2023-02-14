@@ -1,5 +1,5 @@
 //The questions that will be displayed to the user when the functions are executed.
-const StartQuestion = [
+const playQuestion = [
   {
     type: "list",
     message: "Choose an action:",
@@ -9,15 +9,16 @@ const StartQuestion = [
 ];
 
 const ManagerQuestion = [
-  {
-    type: "input",
-    name: "name",
-    message: "What Employee's name ?",
-  },
+
   {
     type: "input",
     name: "id",
     message: "What Employee's ID number ?",
+  },
+  {
+    type: "input",
+    name: "name",
+    message: "What Employee's name ?",
   },
   {
     type: "input",
@@ -55,15 +56,16 @@ const EngineerQuestion = [
 ];
 
 const InternQuestion = [
-  {
-    type: "input",
-    name: "name",
-    message: "What Employee's name ?",
-  },
+  
   {
     type: "input",
     name: "id",
     message: "Employee's ID number:",
+  },
+  {
+    type: "input",
+    name: "name",
+    message: "What Employee's name ?",
   },
   {
     type: "input",
@@ -77,7 +79,7 @@ const InternQuestion = [
   },
 ];
 
-module.exports = { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion };
+module.exports = { playQuestion, InternQuestion, EngineerQuestion, ManagerQuestion };
         }
 
         else if(response.action_choice === 'Add a manager'){
@@ -87,8 +89,6 @@ module.exports = { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuest
 
        //else build the team
        else buildTeam(managerArray, engineerArray, internArray);
-
-
        
      })
 }
@@ -96,12 +96,6 @@ module.exports = { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuest
 
 function addEngineer() {
     inquirer.prompt([
-        {
-            type: 'input',
-            message: 'What is the engineers\s name?',
-            name: 'engineer_name',
-            
-        },
 
         {
             type: 'input',
@@ -109,7 +103,12 @@ function addEngineer() {
             name: 'engineer_id',
 
         },
-
+        {
+            type: 'input',
+            message: 'What is the engineers\s name?',
+            name: 'engineer_name',
+            
+        },
         {
             type: 'input',
             message: 'What is the engineer\s email?',
@@ -139,25 +138,19 @@ function addIntern() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'What is the intern\s name?',
-            name: 'intern_name',
-            
-        },
-
-        {
-            type: 'input',
             message: 'What is the engineer\s ID?',
             name: 'intern_id',
-
+        }
+        {
+            type: 'input',
+            message: 'What is the intern\s name?',
+            name: 'intern_name',
         },
-
         {
             type: 'input',
             message: 'What is the intern\s email?',
             name: 'intern_email',
-
         },
-
         {
             type: 'input',
             message: 'What is the intern\s school name?',
@@ -171,7 +164,7 @@ function addIntern() {
 
         internArray.push(intern);
 
-        starterQuestions();
+        playQuestions();
 
      })
 }
@@ -180,25 +173,21 @@ function addManager() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'What is the manager\s name?',
-            name: 'manager_name',
-            
-        },
-
-        {
-            type: 'input',
             message: 'What is the manager\s ID?',
             name: 'manager_id',
 
         },
-
+        {
+            type: 'input',
+            message: 'What is the manager\s name?',
+            name: 'manager_name',
+            
+        },
         {
             type: 'input',
             message: 'What is the manager\s email?',
             name: 'manager_email',
-
         },
-
         {
             type: 'input',
             message: 'What is the manager\s office nubmer?',
@@ -212,7 +201,7 @@ function addManager() {
 
         managerArray.push(manager);
 
-        starterQuestions();
+        playQuestions();
     })
 }
 
@@ -220,4 +209,4 @@ function addManager() {
 
 
 
-module.exports = {starterQuestions, addEngineer, addIntern, addManager}
+module.exports = {playQuestions, addEngineer, addIntern, addManager}
