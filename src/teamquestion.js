@@ -3,7 +3,7 @@ const Manager = require("./Manager");
 const Engineer = require("./Engineer");
 const Intern = require("./Intern");
 
-const playQuestions = [  
+const PlayQuestions = [  
   {    type: "list",    
        message: "Choose an action:",    
        name: "selection",    
@@ -72,7 +72,7 @@ const engineerArray = [];
 const internArray = [];
 
 function starterQuestions() {
-  inquirer.prompt(playQuestions).then((response) => {
+  inquirer.prompt(PlayQuestions).then((response) => {
     if (response.selection === "Add Manager") {
       addManager();
     } else if (response.selection === "Add Engineer") {
@@ -87,7 +87,7 @@ function starterQuestions() {
 
 function addEngineer() {
   inquirer.prompt(EngineerQuestion).then((response) => {
-    const engineer = new Engineer(
+    const Engineer = new Engineer(
       response.id,
       response.name,
       response.email,
@@ -100,7 +100,7 @@ function addEngineer() {
 
 function addIntern() {
   inquirer.prompt(InternQuestion).then((response) => {
-    const intern = new Intern(
+    const Intern = new Intern(
       response.id,
       response.name,
       response.email,
@@ -113,7 +113,7 @@ function addIntern() {
 
 function addManager() {
   inquirer.prompt(ManagerQuestion).then((response) => {
-    const manager = new Manager(
+    const Manager = new Manager(
       response.id,
       response.name,
       response.email,
