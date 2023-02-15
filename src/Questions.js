@@ -1,28 +1,37 @@
-const inquirer = require("inquirer");
-const TeamBuilderr = require("./TeamBuilder.js");
-const Engineer = require("../lib/Engineer");
-const Intern = require("../lib/Intern");
-const Manager = require("../lib/Manager");
-const Questions = require("./Questions");
-const { StartQuestion, InternQuestion, EngineerQuestion, ManagerQuestion } = require("./teamquestion");
+const inquirer = require('inquirer');
+const TeamBuilder = require('./TeamBuilder.js');
+const Engineer = require('../lib/Engineer');
+const Intern = require('../lib/Intern');
+const Manager = require('../lib/Manager');
+const {
+  StartQuestion,
+  InternQuestion,
+  EngineerQuestion,
+  ManagerQuestion,
+} = require('./teamquestion');
+const Questions = require('./Questions');
 
+const engineers = [];
+const interns = [];
+const managers = [];
 
-const startMainQuestions = () => {
+const GeneralQuestions = () => {
   inquirer.prompt(Questions.starterQuestions).then((response) => {
     switch (response.selection) {
-      case "Add engineer":
+      case 'Add engineer':
         addEngineer();
         break;
-      case "Add intern":
+      case 'Add intern':
         addIntern();
         break;
-      case "Add manager":
+      case 'Add manager':
         addManager();
         break;
-      case "Create team HTML page":
+      case 'Create team HTML page':
         TeamBuilder(engineers, interns, managers);
         break;
       default:
+        break;
     }
   });
 };
@@ -36,7 +45,7 @@ const addEngineer = () => {
       response.github
     );
     engineers.push(engineer);
-    startMainQuestions();
+    GeneralQuestions();
   });
 };
 
@@ -49,7 +58,7 @@ const addIntern = () => {
       response.school
     );
     interns.push(intern);
-    startMainQuestions();
+    GeneralQuestions();
   });
 };
 
@@ -62,8 +71,8 @@ const addManager = () => {
       response.officenumber
     );
     managers.push(manager);
-    startMainQuestions();
+    GeneralQuestions();
   });
 };
 
-module.exports = Questions();
+GeneralQuestions();
