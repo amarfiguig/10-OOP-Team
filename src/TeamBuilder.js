@@ -3,7 +3,26 @@ const Manager = require('../lib/Manager');
 const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 
+// Generate the HTML for each manager
+
+let managerDetails = '';
+manager.forEach(manager => {
+  managerDetails += 
+    `<div class="card">
+      <div class="card-header">
+        <h2>${manager.name}</h2>
+        <h3><span class="fa-solid fa-user-gear"></span> Engineer</h3>
+      </div>
+      <div class="card-info">
+        <p><b><i>Employee ID:</i></b> ${manager.id} </p>
+        <p><b><i>Email:</i></b> <a href="mailto:${manager.email}">${engineer.email}</a></p>
+        <p><b><i>Office number :</i></b> ${manager.office.number}</p>
+      </div>
+    </div>`;
+});
+
 // Generate the HTML for each engineer
+
 let engineerDetails = '';
 engineers.forEach(engineer => {
   engineerDetails += 
