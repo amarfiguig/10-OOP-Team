@@ -1,5 +1,5 @@
 // Import the runStartQuestions function from the teamquestion.js file
-const startMainQuestions = require('./src/Questions')
+const startMainQuestions = require('./src/teamquestion')
 
-// Invoke the runStartQuestions function
+// Invoke the PlayQuestions function
 startMainQuestions();
