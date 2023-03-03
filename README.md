@@ -58,7 +58,7 @@ node index.js
 [Video](https://drive.google.com/file/d/1lvyd8nxgyaEXcb7vhK1RD1R8n3rXJjtO/view?usp=share_link)
 
 ## Screenshots Pictures
-[Picture 1](https://github.com/amarfiguig/10-OOP-Team/blob/8a6bb9d5aa870c710dc97c9f1d4a061d590154b8/Template/Sc.png?raw=true)
+[Picture 1](https://github.com/amarfiguig/10-OOP-Team/blob/8a6bb9d5aa870c710dc97c9f1d4a061d590154b8/Template/Sc.png)
 [Picture 2](https://github.com/amarfiguig/10-OOP-Team/blob/8a6bb9d5aa870c710dc97c9f1d4a061d590154b8/Template/Sc2.png)
 
 ## License
