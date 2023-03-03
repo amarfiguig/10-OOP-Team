@@ -8,8 +8,8 @@
 <p>
     <img src="https://img.shields.io/badge/-OOP-yellow" />
 </p>
-[Source](https://shields.io)
-[Video](https://shields.io)
+
+[Source](https://shields.io/)
 
 This purpose of this project is to be able to use node.js to create a command line application that generates the html for a company team with the input. 
 
