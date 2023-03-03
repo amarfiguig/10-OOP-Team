@@ -20,7 +20,8 @@ This purpose of this project is to be able to use node.js to create a command li
 4. [License](#license)
 5. [Acceptance](#acceptance)
 6. [Tests](#tests)
-7. [Questions](#questions)
+7. [Screenshots](#screenshots)
+8. [Questions](#questions)
 
 ## Acceptance
 ```
@@ -55,10 +56,12 @@ node index.js
 
 ``````
 
-## Screenshot Video
+## Screenshots 
+
+ ### Video
 [Video](https://drive.google.com/file/d/1lvyd8nxgyaEXcb7vhK1RD1R8n3rXJjtO/view?usp=share_link)
 
-## Screenshots Pictures
+ ### Pictures
 [Picture 1](https://github.com/amarfiguig/10-OOP-Team/blob/8a6bb9d5aa870c710dc97c9f1d4a061d590154b8/Template/Sc.png)
 [Picture 2](https://github.com/amarfiguig/10-OOP-Team/blob/8a6bb9d5aa870c710dc97c9f1d4a061d590154b8/Template/Sc2.png)
 
